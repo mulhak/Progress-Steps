@@ -1,23 +1,23 @@
-const progressbar = document.getElementById('progressbar');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-const circle= document.querySelectorAll('circle');
+const progress = document.getElementById('progress')
+const prev = document.getElementById('prev')
+const next = document.getElementById('next')
+const circles= document.querySelectorAll('.circle')
+
 
 let currentActive = 1
 
-nextBtn.addEventListener('click',()=> {
-    progressForward()
-});
 
-prevBtn.addEventListener('click',()=> {
-    progressBack()
-});
-
-
-function progressForward() {
+next.addEventListener('click', ()=> {
     currentActive++
-    console.log(currentActive)
-}
-function progressback() {
-    currentActive--
-}
+
+     if(currentActive > circles.length){
+         currentActive = circles.length
+     } 
+     console.log(currentActive)   
+})
+
+prev.addEventListener('click',()=> {
+    
+});
+
+
