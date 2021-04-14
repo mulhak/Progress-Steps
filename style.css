@@ -39,7 +39,7 @@ body {
        
     }
 
-.progressBar {
+.progress {
     background-color: rgb(119, 119, 245);
     position:absolute;
     top: 50%;
